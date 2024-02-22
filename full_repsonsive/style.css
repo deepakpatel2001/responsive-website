@@ -1,0 +1,424 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+.navParentContainer {
+    border: 2px solid;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    height: 100px;
+    position: relative;
+}
+
+.left {
+    height: 53px;
+    border-radius: 50%;
+    border: 2px solid;
+}
+
+a img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.right {
+    font-size: 2.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+}
+
+.hamburger {
+    margin-right: 50px;
+}
+
+.ulrow {
+    background-color: #ffffffd2;
+    border-radius: 10px;
+    padding: 0 10px;
+    margin-right: 20px;
+    margin-top: 10px;
+    display: none;
+    text-align: center;
+}
+
+.ulrowHamburger {
+    display: block;
+    position: relative;
+    right: -20px;
+}
+
+.right li {
+    list-style: none;
+    margin: 1rem 0;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.right li:hover {
+    transition: all 0.2s linear;
+    color: red;
+    background-color: black;
+    border-radius: 2rem;
+}
+
+/* main container */
+
+.myInfoDiv {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    background-color: cyan;
+    margin: 1rem;
+    justify-content: space-around;
+}
+
+.upperDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 1rem;
+    border-radius: 2rem;
+    border: 2px solid;
+}
+
+.imageDiv {
+    width: 300px;
+    border-radius: 2rem;
+}
+
+.imageDiv img {
+    max-width: 100%;
+    height: auto;
+    border-radius: inherit;
+}
+
+.btn {
+    margin: 1.5rem 0;
+    border: 2px solid;
+    padding: 0.5rem 2rem;
+    font-size: 2.2rem;
+    font-weight: 800;
+    border-radius: 1rem;
+    font-family: sans-serif;
+}
+
+.btn a {
+    text-decoration: none;
+}
+
+.btn-hire {
+    margin-top: -0.5rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.btn-hire a {
+    color: #596af8;
+}
+
+.lowerDiv {
+    margin-top: 1rem;
+    font-size: 2.2rem;
+    padding: 1rem;
+}
+
+.workHeading {
+    text-align: center;
+}
+
+.workList li {
+    list-style: none;
+}
+
+.schoolingHeading {
+    font-size: 2.3rem;
+    font-weight: 900;
+    color: rgb(111, 74, 25);
+    text-align: center;
+}
+
+/* technolgoies */
+
+.knowTech {
+    font-size: 2.3rem;
+    text-align: center;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.techHeading {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 2rem;
+    font-weight: 700;
+}
+
+.knowTech a {
+    text-decoration: none;
+    border: 2px solid;
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    position: relative;
+    z-index: 1;
+    margin: 0 1rem;
+    color: #596af8;
+}
+
+.knowTech a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -35.4rem;
+    border: 2px solid;
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.knowTech a:hover::before {
+    background-color: cyan;
+    transition: 0.7s linear;
+    left: 0;
+}
+
+.linkDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    width: 35rem;
+    height: 5rem;
+    overflow: hidden;
+}
+
+/* testimonials */
+
+.headingTestimonials {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 2.5rem;
+    font-weight: 800;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+        sans-serif;
+}
+
+.tesimonials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testDivs {
+    background-color: rgb(244, 71, 71);
+    padding: 1rem 0;
+    margin: 1rem;
+}
+
+.upperIconTest {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testImages {
+    max-width: 17rem;
+    min-height: 17rem;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.testImages img {
+    max-width: inherit;
+    min-height: inherit;
+}
+
+.lowerContenTest {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.testDivs:hover {
+    transition: 0.7s linear;
+    background-color: cyan;
+}
+
+.testImages img:hover {
+    animation: imageRotater 0.7s;
+}
+
+@keyframes imageRotater {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* form controller */
+
+.contactHeading {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.formParent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2.2rem;
+    margin-top: 1.5rem;
+}
+
+.formParent input {
+    font-size: 2rem;
+    outline: none;
+}
+
+.formSpace {
+    margin: 1rem 0;
+}
+
+.submit-btn {
+    background-color: cyan;
+    padding: 0.5rem 1.5rem;
+    border-radius: 1rem;
+}
+
+.requirement {
+    margin-left: -4rem;
+}
+
+.map {
+    margin: 2.5rem 1rem;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+iframe {
+    margin-top: 1rem;
+}
+
+/* parentFooter */
+
+.parentFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1rem;
+    background-image: linear-gradient(to right, cyan, rgb(255, 0, 247), pink);
+}
+
+.about {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.footer {
+    font-size: 2.2rem;
+}
+
+.quickLinks {
+    margin-top: 10px;
+}
+
+.footer ul li {
+    list-style: none;
+    margin: 1rem 0;
+}
+
+@media screen and (min-width: 639px) {
+    .myInfoDiv {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-around;
+        align-items: center;
+        grid-template-rows: repeat(1, 1fr);
+    }
+    .lowerDiv {
+        text-align: center;
+    }
+    .upperDiv {
+        border: none;
+        margin-top: 0;
+    }
+    .btn {
+        display: inline-block;
+    }
+    .btn-hire {
+        margin-left: 1rem;
+    }
+
+    .knowTech {
+        flex-direction: row;
+    }
+
+    .tesimonials {
+        flex-direction: row;
+    }
+
+    .headingTestimonials {
+        margin-top: 2.2rem;
+    }
+
+    .testDivs {
+        padding: 1rem;
+    }
+
+    .parentFooter {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .about {
+        max-width: 300px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .ulrow {
+        display: flex;
+        background-color: transparent;
+        position: relative;
+        top: -32px;
+    }
+
+    .ulrow li + li {
+        margin-left: 10px;
+    }
+    .ulrow li {
+        padding: 15px;
+    }
+}
