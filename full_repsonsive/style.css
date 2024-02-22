@@ -68,7 +68,13 @@ a img {
     margin: 1rem 0;
     font-weight: 700;
     cursor: pointer;
+    color: black;
     padding: 15px;
+}
+
+.right li a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .right li:hover {
